@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      myInfo = {
+    name : "DASARI CHINNARAO",
+    age: 21,
+    place: "BGPALEM"
+}
+// Step 2: Function to validate the object
+function validateObject(Info) {
+
+for(key in myInfo){
+    if(Info[key] =="" || Info[key] == null ){
+        console.log("validation is failed");
+        return false;
+    }
+    else{
+        console.log("validation successful");
+        return true;
+    }
+}
+}
+if (validateObject(myInfo)) {
+    // Adding new key-value pairs to the object
+    myInfo.phoneNum = "9392495156"; // New element
+    myInfo.address = "BGPALEM"; // New element
+    console.log("New prop added:", myInfo);
+} else {
+    console.log("Cannot add new elements");
+}  
+    </script>
+</body>
+</html>

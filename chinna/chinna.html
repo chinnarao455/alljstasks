@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+
+</head>
+<body>
+    <header>
+        <h2 id="name"style="text-align:center;">name</h2>
+        <p id="p1"style="text-align:center;">number address</p>
+
+    </header><br>
+    <hr>
+    <div id="div1">
+        <h3 id="profile">this is for profile</h3>
+        <p>description</p>
+    </div>
+    <div id="div2"></div>
+    <br>
+    <div id="div3">
+        <h3 id="skill">skills</h3>
+        <p id="lang">python</p>
+    </div>
+    <br>
+    <div id="div4">
+        <h3 id="pro">PROJECT</h3>
+        <p id="des">hii</p>
+    </div>
+    <script>
+        var a=document.getElementById("name")
+        a.innerText="DASARI CHINNA RAO"
+        console.log(a);
+        var b=document.getElementById("p1")
+        b.innerText="+919392495156|dasarichinnarao455@gmail.com|https:github.com/chinnarao455"
+        console.log(b);
+        //CHANGE VALUE
+        var c =  document.getElementById("profile")
+console.log(c.innerText="PROFILE");
+//CHANGE CHILD ELE VALUES
+var d =document.getElementById("div1")
+var children = d.children;
+children[1].innerText="Detail-oriented and highly motivated recent graduate with a solid foundation in front-end web development and database management and basic Python programming. Skilled in HTML, CSS, and JavaScript, with the ability to create responsive, user-centric websites. Competent in SQL for effective database design, management, and optimization. A quick learner with a passion for leveraging technical skills to solve complex challenges, committed to continuous growth and contributing to innovative projects in web development and database management."
+//ADD ELEMENT in parent
+var e =  document.getElementById("div2")
+console.log(e.innerHTML="<h3>EDUCATION</h3>");
+
+
+//APPEND
+var e = document.getElementById("div2")
+var n = document.createElement("p")
+n.innerText = "GMR Institute of Technology, Rajam  | B. Tech Computer Science and Engineering, 2024"                                                                                           
+e.appendChild(n)
+
+
+//REPLACE
+var wtrep = document.createElement("p")
+wtrep.innerText="SKILLS"
+var rep = document.getElementById("skill")
+rep.replaceChildren(wtrep)
+
+
+var CHANGE = document.getElementById("lang")
+CHANGE.innerText="Html , CSS, JavaScript, GitHub"
+
+var g = document.getElementById("des")
+g.innerText = "•	Developed a machine learning-based system utilizing algorithms such as Decision Tree, Random Forest and Extreme Gradient Boosting (XG Boost) to classify phishing and legitimate websites. "
+
+
+
+var ele_body = document.body
+console.log(ele_body);
+
+var ele_title = document.title
+console.log(ele_title);
+
+var ele_link = document
+console.log(ele_link);
+
+var div = document.getElementById("div1")
+console.log(div);
+
+var div2 = document.getElementById("div2")
+console.log(div2);
+
+var div3 = document.getElementById("div3")
+console.log(div3);
+
+var div4 = document.getElementById("div4")
+console.log(div4);
+
+var p = document.getElementsByTagName("p")
+console.log(p);
+
+var h3 = document.getElementsByTagName("h3")
+console.log(h3);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
