@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #div1 {
+           
+            margin-top: 20px;
+        }
+        img {
+            width: 300px;
+            height: 400px;
+           
+        }
+       button {
+            padding: 15px;
+            font-size: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="div1">
+       <img src = "virat-kohli.jpg" id="id0">
+       <button class="id1" onclick=opac0()>button</button>
+       <button class="id2" onclick=opac1() >button</button>
+       <button class="id3" onclick=opac2()>button</button>
+       <button class="id4" onclick=opac3()>button</button>
+       <button class="id5" onclick=opac4()>button</button>
+       <button class="id6" onclick=opac5()>button</button>
+       <button class="id7" onclick=opac6()>button</button>
+       <button class="id8" onclick=opac7()>button</button>
+       <button class="id9" onclick=opac8()>button</button>
+       <button class="id10" onclick=opac9()>button</button>
+
+    </div>
+
+<script>
+
+
+
+
+    var id1 = document.getElementsByClassName("id1")
+    id1[0].innerText = "BUTTON 0.1" //classNmae returns a collection of elements so we can access with indexes[0] to n if we have same cls NAMES
+   
+    var id2 = document.getElementsByClassName("id2")
+    id2[0].innerText = "BUTTON 0.2"
+
+    var id3 = document.getElementsByClassName("id3")
+    id3[0].innerText = "BUTTON 0.3"
+
+    var id4 = document.getElementsByClassName("id4")
+    id4[0].innerText = "BUTTON 0.4"
+
+    var id5 = document.getElementsByClassName("id5")
+    id5[0].innerText = "BUTTON 0.5"
+
+    var id6 = document.getElementsByClassName("id6")
+    id6[0].innerText = "BUTTON 0.6"
+
+    var id7 = document.getElementsByClassName("id7")
+    id7[0].innerText = "BUTTON 0.7"
+
+    var id8 = document.getElementsByClassName("id8")
+    id8[0].innerText = "BUTTON 0.8"
+
+    var id9 = document.getElementsByClassName("id9")
+    id9[0].innerText = "BUTTON 0.9"
+
+    var id10 = document.getElementsByClassName("id10")
+    id10[0].innerText = "BUTTON 1"
+
+
+   function opac0(){
+    let img1= document.getElementsByClassName("id1")
+    img1[0].innerHTML = "<img src='virat-kohli.jpg' style='opacity:0.1; height:150px; width:150px;'>";
+
+   }
+
+   function opac1(){
+    let img2= document.getElementsByClassName("id2")
+    img2[0].innerHTML="<img src ='virat-kohli.jpg' style='opacity:0.2; height:200px; width:230px;'>"
+    
+   }
+    
+   function opac2(){
+    let img3= document.getElementsByClassName("id3")
+    img3[0].innerHTML="<img src ='virat-kohli.jpg' style='opacity:0.3; height:300px; width:240px;'>"
+    
+   }
+   function opac3(){
+    let img4= document.getElementsByClassName("id4")
+    img4[0].innerHTML="<img src ='virat-kohli.jpg' style='opacity:0.4; height:350px; width:250px;'>"
+    
+   }
+   function opac4(){
+    let img5= document.getElementsByClassName("id5")
+    img5[0].innerHTML="<img src ='virat-kohli.jpg' style='opacity:0.5; height:400px; width:280px;'>"
+    
+   }
+   function opac5(){
+    let img6= document.getElementsByClassName("id6")
+    img6[0].innerHTML="<img src ='virat-kohli.jpg' style='opacity:0.6; height:450px; width:310px;'>"
+    
+   }
+   function opac6(){
+    let img7= document.getElementsByClassName("id7")
+    img7[0].innerHTML="<img src ='virat-kohli.jpg' style='opacity:0.7; height:500px; width:350px;'>"
+    
+   }
+   function opac7(){
+    let img8= document.getElementsByClassName("id8")
+    img8[0].innerHTML="<img src ='virat-kohli.jpg' style='opacity:0.8; height:550px; width:350px;'>"
+    
+   }
+   function opac8(){
+    let img9= document.getElementsByClassName("id9")
+    img9[0].innerHTML="<img src ='virat-kohli.jpg' style='opacity:0.9; height:580px; width:380px;'>"
+    
+   }
+
+   function opac9(){
+    let img10= document.getElementsByClassName("id10")
+    img10[0].innerHTML="<img src ='virat-kohli.jpg' style='opacity:1; height:650px; width:400px;'>"
+    
+   }
+</script>
+
+
+</body>
+</html>

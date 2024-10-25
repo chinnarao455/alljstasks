@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:bisque
+        }
+
+        h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: chocolate;
+        }
+
+        input{
+            width:  250px;
+            border-radius: 30px;
+            height:20px;
+            background-color: rgb(194, 195, 197);
+            color: rgb(0, 0, 0);
+            border-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body onresize= "alert('WINDOW size changed')"  onload="alert('welcome user This is WINDOW EVENT')" >
+
+<h2>FORM EVENTS</h2>
+    <form action=" " method="get" onsubmit="alert('form submitted')">
+        <input type="text " name="" id="" placeholder="ON SUBMIT">
+
+        <button type="submit">submit</button>
+    </form>
+    <br>
+    
+    
+    <form action=" " method="get">
+        <input type="email" name="" id="" placeholder="ON  CHANGE" onchange="alert('data changed')">
+
+        <button type="submit">submit</button>
+    </form>
+    <br>
+   
+
+    <form action=" " method="get">
+        <input type="number " name="" id="" placeholder="ON FOCUS" onfocus="alert('this is onfocus')">
+
+        <button type="submit">submit</button>
+    </form>
+    <br>
+   
+
+    <form action=" " method="get">
+        <input type="number " name="" id="" placeholder="ON INPUT" oninput="alert('input received')">
+
+        <button type="submit">submit</button>
+    </form>
+    <br>
+    
+
+    <form action=" " method="get">
+        <div>
+            <input type="number " name="" id="" value="CHINNARAO">
+        </div>
+        <button type="reset" onclick=newvalue()>reset</button>
+    </form>
+    <br>
+    <hr>
+
+    <h2>KEYBOARD EVENTS</h2>
+
+    keydown:
+    <input type ="text" ame="" id="" onkeydown="alert('keydown event')">
+   <br>
+   <br>
+
+   keyup: <input type ="text" ame="" id="" onkeyup="alert('keyup event')">
+   <br>
+   <br>
+
+  keypress: <input type ="text" ame="" id="" onkeypress="alert('keypress event')">
+   <br>
+
+   <hr>
+
+
+
+
+
+
+
+
+    <script>
+        function newvalue() {
+            let ele = document.getElementsByTagName("div")
+            ele[0].innerHTML =  "<input type='text' name='' id='' value='value reset'>"
+
+            
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+
+    </h1>
+
+    <br>
+
+    <table border="2px">
+        <tr>
+            <th>S.NO</th>
+            <th>NAME</th>
+        </tr>
+        <tr></tr>
+        <tr> </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+    </table>
+    <br>
+
+    <p></p>
+    
+</body>
+
+<script>
+
+var ele = document.getElementsByTagName("h1")
+let username = prompt("enter the name of user : ")
+ ele[0].innerText=username
+ console.log(ele[0]);
+
+
+
+ 
+ let row = document.getElementsByTagName("tr")
+    console.log(row);
+    let data = document.createElement("td")
+    data.innerText = "1"
+    console.log(data);
+    row[1].appendChild(data)
+
+    let data1= document.createElement("td")
+    data1.innerText = "VENKANNA"
+    console.log(data1);
+    row[1].appendChild(data1)
+
+
+    let row2 = document.getElementsByTagName("tr")
+    console.log(row2);
+    let data2 = document.createElement("td")
+    data2.innerText = "2"
+    console.log(data2);
+    row2[2].appendChild(data2)
+
+    let data3= document.createElement("td")
+    data3.innerText = "MAHESH"
+    console.log(data3);
+    row2[2].appendChild(data3)
+
+
+    let row3 = document.getElementsByTagName("tr")
+    console.log(row3);
+    let data31 = document.createElement("td")
+    data31.innerText = "3"
+    console.log(data31);
+    row3[3].appendChild(data31)
+
+    let data32= document.createElement("td")
+    data32.innerText = "TIRUPATHI"
+    console.log(data32);
+    row3[3].appendChild(data32)
+
+    let row4 = document.getElementsByTagName("tr")
+    let data41 = document.createElement("td")
+    data41.innerText="4"
+    row4[4].appendChild(data41)
+    console.log(data41);
+
+    let data42 = document.createElement("td")
+    data42.innerText= "CHINNARAO"
+    row4[4].appendChild(data42)
+    console.log(data42);
+
+
+    let row5 = document.getElementsByTagName("tr")
+    let data51 = document.createElement("td")
+    data51.innerText="5"
+    row5[5].appendChild(data51)
+    console.log(data51);
+
+    let data52 = document.createElement("td")
+    data52.innerText= "MAHESH"
+    row5[5].appendChild(data52)
+    console.log(data52);
+
+    
+ let para =document.getElementsByTagName("P")
+ para[0].innerText ="TASK COMPLETED"
+ 
+ 
+ 
+
+</script>
+
+</html>

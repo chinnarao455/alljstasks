@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Username:<input type="text" name="" id="name1">
+    <br><br>
+    Password:<input type="password" name="" id="pass1">
+    <br><br>
+
+    FirstName<input type="text" name="" id="fname"><br>
+    <br>
+    LastName<input type="text" name="" id="lname"><br>
+    <br>
+
+    Email<input type="mail" name="" id="mail"><br>
+    <br>
+   Ph.no:<input type="number" name="" id="ph">
+<br><br>
+
+
+
+
+
+
+
+    <button>LOGIN</button>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</body>
+
+<script>
+    let name = document.getElementById("name1")
+    let pass = document.getElementById("pass1")
+    let name2 = document.getElementById("fname")
+    let name3 = document.getElementById("lname")
+    let name4 = document.getElementById("mail")
+    let name5 = document.getElementById("ph")
+
+    let btn = document.getElementsByTagName("button")[0]
+
+
+    let para1 = document.getElementsByTagName("p")[0]
+    let para2 = document.getElementsByTagName("p")[1]
+    let para3 = document.getElementsByTagName("p")[2]
+    let para4= document.getElementsByTagName("p")[3]
+    let para5 = document.getElementsByTagName("p")[4]
+    let para6 = document.getElementsByTagName("p")[5]
+
+
+
+
+    btn.addEventListener("click", function(){
+
+      /*console.log(name.value);
+        console.log(pass.value);
+        console.log(name2.value);
+        console.log(name3.value);
+        console.log(name4.value);
+        console.log(name5.value);*/
+
+        
+        
+
+
+        para1.innerText = name.value
+        para2.innerText = pass.value
+        para3.innerText = name2.value
+        para4.innerText = name3.value
+        para5.innerText = name4.value
+        para6.innerText = ` The number is ${name5.value}`
+
+
+
+
+        //clear input fields
+        name.value = ""
+        pass.value = ""
+        name2.value = ""
+        name3.value = ""
+        name4.value = ""
+        name5.value = ""
+
+
+      console.log(para1, para2,para3,para4,para5,para6);
+   
+    })
+    //console.log(name, pass,name2,name3,name4,name5); //it shows the tags in html 
+    //with id, name 
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

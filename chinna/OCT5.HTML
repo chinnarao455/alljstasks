@@ -1,0 +1,62 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+ //prompt is used in broswer as it is browser specific
+function calDays(age) {
+    var days = age * 365;
+    console.log("The  days for 21 years is:" + days);
+
+}
+calDays(21)
+
+
+var date1 = new Date()
+var date2 = new Date("2022-01-01")
+function dates() {
+    var diff = date1 - date2;
+    var years = (diff / (1000 * 60 * 60 * 24 * 365))
+    var months = (diff / (1000 * 60 * 60 * 24 * 30))
+
+    console.log("years" + ":" + years.toFixed(0));
+    console.log("months" + ":" + months.toFixed(0));
+}
+dates();
+
+
+
+
+
+    
+
+
+
+function generateOTP() {
+    let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let otp = ''; //it stores the otp value
+    
+    for (let i = 0; i < 6; i++) {
+      let randomindex = Math.floor(Math.random() * characters.length);
+      otp = otp + characters[randomindex];
+    }
+    
+    console.log(otp);
+    
+  }
+  
+   generateOTP();
+</script>
+</html>
+
